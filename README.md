@@ -7,7 +7,7 @@ Skeletal Chair（骷髅椅）的在线 3D 查看器。用 GitHub Pages 托管，
 | 文件 | 作用 |
 |---|---|
 | `index.html` | 查看器页面 |
-| `chair.glb` | 压缩后的椅子模型，1.0 MB（传输约 0.8 MB）。来自 chair123.3dm 的 A 椅：弯折钢筋框架、鱼嘴对接的横撑、TIG 焊缝、脚垫、座板和靠背 |
+| `chair.glb` | 压缩后的椅子模型，约 1.5 MB。来自 chair123.3dm 的 A 椅：弯折钢筋框架、鱼嘴对接的横撑、TIG 焊缝、脚垫、座板和靠背 |
 | `vendor/three/` | three.js 本地副本（MIT 协议）。网站不依赖任何外部 CDN，可以长期稳定运行 |
 | `.nojekyll` | 让 GitHub Pages 原样发布文件，不要删 |
 
@@ -41,8 +41,8 @@ Skeletal Chair（骷髅椅）的在线 3D 查看器。用 GitHub Pages 托管，
 
 ## 查看器功能
 
-- **视角：** Overall、Side（侧面）、Seat（座面）、Back（背面）、Welds（焊缝）、Stretcher（横撑）、Feet（脚）。Welds、Stretcher、Feet 三个近景会自动切换到线稿模式，焊缝看得更清楚。
+- **视角：** Overall、Side（侧面）、Seat（座面）、Back（背面）、Top（俯视）、Feet（脚）。Feet 近景会自动切换到线稿模式。
 - **显示模式：** X-ray（透视）和 Drawing（线稿）。线稿模式下，座板和靠背是半透明的，能看到下面的钢筋框架和螺丝。
-- **Explode（爆炸图）：** 座板和靠背连同支架、螺丝一起分开；椅腿、横撑、焊缝和脚垫保持不动。
+- **Explode（爆炸图）：** 座板、靠背和螺丝分开；椅腿、横撑、焊缝、脚垫，以及座板下面的支架和吊板都保持不动。
 - **缩放不会抢走页面滚动：** 桌面端用 ⌘/Ctrl + 滚轮、触控板双指捏合，或 +/− 按钮。手机上先点 “Tap to interact” 才能旋转和缩放。
 - **流畅：** 只有拖动、切换或调滑杆时才渲染，静止时几乎不占 CPU 和 GPU。
